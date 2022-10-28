@@ -1,0 +1,85 @@
+.banner {
+  display: flex;
+  flex-direction: column;
+}
+
+.banner__title {
+  color: @white;
+}
+
+.banner__container {
+  background: url("../img/back-mobile.jpg") no-repeat;
+  min-height: 462px;
+  box-sizing: border-box;
+  padding-top: 95px;
+  background-size: cover;
+  background-position: 100% center;
+  position: relative;
+
+  &::before {
+    content: url("../img/phone-image-banner.png");
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: block;
+    width: 320px;
+    height: 286px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.banner__bottom {
+  background-color: @black;
+  padding-top: 28px;
+  padding-bottom: 38px;
+}
+
+.banner__button {
+  color: @white;
+  text-decoration: none;
+  margin-bottom: 32px;
+}
+
+.banner__text {
+  color: @white;
+  text-align: center
+}
+
+.banner__list {
+  .list-none();
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 28px;
+}
+
+.banner__link {
+  display: block;
+  &--apple {
+    &::before {
+      content: url("../img/icons/apple.svg");
+      display: block;
+      width: 47px;
+      height: 56px;
+    }
+  }
+
+  &--android {
+    &::before {
+      content: url("../img/icons/android.svg");
+      display: block;
+      width: 43px;
+      height: 47px;
+    }
+  }
+
+  &--microsoft {
+    &::before {
+      content: url("../img/icons/microsoft.svg");
+      display: block;
+      width: 44px;
+      height: 41px;
+    }
+  }
+}

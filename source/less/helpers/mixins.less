@@ -1,0 +1,23 @@
+.tablet (@rules) {
+  @media (min-width: @tablet-width) {
+    @rules();
+  }
+}
+
+.desktop (@rules) {
+  @media (min-width: @desktop-width) {
+    @rules();
+  }
+}
+
+.retina (@rules) {
+  @media (min-resolution: 2dppx) {
+    @rules();
+  }
+}
+
+.list-none() {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}

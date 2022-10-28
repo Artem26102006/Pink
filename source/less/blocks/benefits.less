@@ -1,0 +1,42 @@
+.benefits {
+  padding-top: 46px;
+}
+
+.benefits__title {
+  margin-bottom: 40px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.benefits__header {
+  margin-bottom: 41px;
+}
+
+.benefits__list {
+  .list-none();
+  background-color: @gray;
+  overflow: hidden;
+  padding-top: 53px;
+  margin-bottom: 100px; //потом удалить это для читаемости
+
+  &::after {
+    content: url(../img/phone-image-example.png);
+    width: 157px;
+    height: 320px;
+    display: block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -37px;
+  }
+}
+
+.benefits__advantage-card {
+  margin-bottom: 43px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
