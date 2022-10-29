@@ -17,15 +17,34 @@
   position: relative;
 
   &::before {
-    content: url("../img/phone-image-banner.png");
+    content: "";
+    background: url("../img/phone-image-banner.png") no-repeat;
     position: absolute;
     left: 0;
     bottom: 0;
     display: block;
     width: 320px;
     height: 286px;
+    background-size: 320px auto;
     left: 50%;
     transform: translateX(-50%);
+
+    @supports (background: url("../img/phone-image-banner.webp")) {
+      background: url("../img/phone-image-banner.webp") no-repeat;
+      background-size: 320px auto;
+    }
+
+    .retina ({
+      background: url("../img/phone-image-banner@2x.png") no-repeat;
+      width: 320px;
+      height: 286px;
+      background-size: 320px auto;
+
+      @supports (background: url("../img/phone-image-banner@2x.webp")) {
+        background: url("../img/phone-image-banner@2x.webp") no-repeat;
+        background-size: 320px auto;
+      }
+    });
   }
 }
 
@@ -43,7 +62,7 @@
 
 .banner__text {
   color: @white;
-  text-align: center
+  text-align: center;
 }
 
 .banner__list {

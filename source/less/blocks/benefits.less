@@ -17,8 +17,21 @@
 .benefits__list {
   .list-none();
   background-color: @gray;
+  position: relative;
   overflow: hidden;
-  padding-top: 53px;
+  padding-top: 85px;
+
+  &::before {
+    content: " ";
+    height: 33px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-clip-path: polygon(0 100%,0 0,100% 0);
+    clip-path: polygon(0 100%,0 0,100% 0);
+    background-color: rgb(255 255 255);
+  }
 
   &::after {
     content: url(../img/phone-image-example.png);
@@ -32,10 +45,19 @@
   }
 }
 
-.benefits__advantage-card {
+.benefits__advantage {
+  text-align: center;
+  padding: 0 20px;
   margin-bottom: 43px;
 
   &:last-child {
     margin-bottom: 0;
   }
+}
+
+.benefits__advantage-title {
+  font-size: 18px;
+  line-height: 24px;
+  margin: 0;
+  margin-bottom: 15px;
 }
