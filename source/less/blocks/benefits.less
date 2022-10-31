@@ -16,10 +16,13 @@
 
 .benefits__list {
   .list-none();
-  background-color: @gray;
   position: relative;
   overflow: hidden;
-  padding-top: 85px;
+  padding: 85px 20px 325px 20px;
+  // background: url("../img/phone-image-example.png") no-repeat;
+  // background-size: 157px 320px;
+  background-color: @gray;
+
 
   &::before {
     content: " ";
@@ -34,20 +37,25 @@
   }
 
   &::after {
-    content: url(../img/phone-image-example.png);
+    content: "";
+    background: url(../img/phone-image-example.png) no-repeat;
     width: 157px;
     height: 320px;
+    background-size: 157px 320px;
     display: block;
-    position: relative;
+    position: absolute;
     left: 50%;
     transform: translateX(-50%);
     bottom: -37px;
+
+    // .retina ({ !!!
+
+    // });
   }
 }
 
 .benefits__advantage {
   text-align: center;
-  padding: 0 20px;
   margin-bottom: 43px;
 
   &:last-child {
