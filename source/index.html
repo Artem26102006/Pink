@@ -135,7 +135,7 @@
             <h3 class="reviews__user">
               Николай Петров
             </h3>
-            <p class="reviews__text">
+            <p class="text reviews__text">
               &laquo;Это приложение перевернуло мой мир и&nbsp;позволило по-новому взглянуть на&nbsp;привычные серые
               вещи! А&nbsp;еще я&nbsp;познакомился со&nbsp;своей будущей женой в&nbsp;комментариях к&nbsp;выложенной
               фотографии!&raquo;
@@ -146,7 +146,7 @@
             <h3 class="reviews__user">
               Николай Петров
             </h3>
-            <p class="reviews__text">
+            <p class="text reviews__text">
               &laquo;Это приложение перевернуло мой мир и&nbsp;позволило по-новому взглянуть на&nbsp;привычные серые
               вещи! А&nbsp;еще я&nbsp;познакомился со&nbsp;своей будущей женой в&nbsp;комментариях к&nbsp;выложенной
               фотографии!&raquo;
@@ -157,7 +157,7 @@
             <h3 class="reviews__user">
               Николай Петров
             </h3>
-            <p class="reviews__text">
+            <p class="text reviews__text">
               &laquo;Это приложение перевернуло мой мир и&nbsp;позволило по-новому взглянуть на&nbsp;привычные серые
               вещи! А&nbsp;еще я&nbsp;познакомился со&nbsp;своей будущей женой в&nbsp;комментариях к&nbsp;выложенной
               фотографии!&raquo;
@@ -186,62 +186,48 @@
     </section>
 
     <section class="prices">
-      <div style="padding: 0; width: auto; overflow: hidden;" class="container prices__container">
-        <table>
-          <thead>
-            <tr>
-              <th></th>
-              <th>
-                <span>База</span>
-                <span>1,99 USD</span>
+      <div class="container prices__container">
+        <table class="table-prices prices__table">
+          <thead class="table-prices__head">
+            <tr class="table-prices__headline">
+              <th class="table-prices__tariff" style="display: none;"></th>
+              <th class="table-prices__tariff">
+                <span class="table-prices__tariff-title">База</span>
+                <span class="table-prices__tariff-price">1,99 USD</span>
               </th>
-              <th>
-                <span>Стандарт</span>
-                <span>3,99 USD</span>
+              <th class="table-prices__tariff">
+                <span class="table-prices__tariff-title">Стандарт</span>
+                <span class="table-prices__tariff-price">3,99 USD</span>
               </th>
-              <th>
-                <span>Анлим</span>
-                <span>9,99 USD</span>
+              <th class="table-prices__tariff">
+                <span class="table-prices__tariff-title">Анлим</span>
+                <span class="table-prices__tariff-price">9,99 USD</span>
               </th>
             </tr>
           </thead>
-          <tbody>
-            <tr>
-              <!-- <td>Розовый фильтр</td> -->
-              <td>
-                <div>
-                  <span><span>Да</span></span>
+          <tbody class="table-prices__body">
+            <tr class="table-prices__row">
+              <td class="table-prices__filter-title">Розовый фильтр</td>
+              <td class="table-prices__cell">
+                <div class="table-prices__feature table-prices__feature--pink" data-feature-name="Розовый фильтр">
+                  <span class="table-prices__availability table-prices__availability--yes">
+                    <span class="visually-hidden">Да</span>
+                  </span>
                 </div>
               </td>
-              <td>
-                <div><span><span>Да</span></span></div>
+              <td class="table-prices__cell">
+                <div class="table-prices__feature table-prices__feature--pink" data-feature-name="Розовый фильтр">
+                  <span class="table-prices__availability table-prices__availability--yes">
+                    <span class="visually-hidden">Да</span>
+                  </span>
+                </div>
               </td>
-              <td>
-                <div><span><span>Да</span></span></div>
-              </td>
-            </tr>
-            <tr>
-              <!-- <td>Розовый фильтр</td> -->
-              <td>
-                <div><span><span>Да</span></span></div>
-              </td>
-              <td>
-                <div><span><span>Да</span></span></div>
-              </td>
-              <td>
-                <div><span><span>Да</span></span></div>
-              </td>
-            </tr>
-            <tr>
-              <!-- <td>Розовый фильтр</td> -->
-              <td>
-                <div><span><span>Да</span></span></div>
-              </td>
-              <td>
-                <div><span><span>Да</span></span></div>
-              </td>
-              <td>
-                <div><span><span>Да</span></span></div>
+              <td class="table-prices__cell">
+                <div class="table-prices__feature table-prices__feature--pink" data-feature-name="Розовый фильтр">
+                  <span class="table-prices__availability table-prices__availability--yes">
+                    <span class="visually-hidden">Да</span>
+                  </span>
+                </div>
               </td>
             </tr>
           </tbody>
