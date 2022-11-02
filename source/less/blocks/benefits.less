@@ -36,7 +36,7 @@
 
   &::after {
     content: "";
-    background: url(../img/phone-image-example.png) no-repeat;
+    background: url("../img/phone-image-example.png") no-repeat;
     width: 157px;
     height: 320px;
     background-size: 157px 320px;
@@ -46,9 +46,20 @@
     transform: translateX(-50%);
     bottom: -37px;
 
-    // .retina ({ !!!
+    @supports (background: url("../img/phone-image-example.webp")) {
+      background: url("../img/phone-image-example.webp") no-repeat;
+      background-size: 157px 320px;
+    }
 
-    // });
+    .retina ({
+      background: url("../img/phone-image-example@2x.png") no-repeat;
+      background-size: 157px 320px;
+
+      @supports (background: url("../img/phone-image-example@2x.webp")) {
+        background: url("../img/phone-image-example@2x.webp") no-repeat;
+        background-size: 157px 320px;
+      };
+    });
   }
 }
 

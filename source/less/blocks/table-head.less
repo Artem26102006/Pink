@@ -1,0 +1,42 @@
+.table-head__tariff {
+  position: relative;
+  overflow: hidden;
+  padding: 19px 95px 35px 95px;
+  background-color: @black-light;
+
+  &--hit {
+    background: url("../img/icons/hit-ribbon.svg") no-repeat;
+    background-color: @black-light;
+    background-size: 88px auto;
+    background-position: -10px 0px;
+
+    &::before {
+      content: attr(data-hit-text);
+      display: block;
+      position: absolute;
+      top: 21px;
+      left: 14px;
+      transform: rotate(-45deg);
+      font-size: 14px;
+      font-weight: 400;
+      color: @white;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.table-head__tariff-title {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: @white;
+}
+
+.table-head__tariff-price {
+  display: block;
+  font-size: 18px;
+  font-weight: 400;
+  color: @white;
+}

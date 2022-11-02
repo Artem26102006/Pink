@@ -44,15 +44,14 @@
   </header>
 
   <main class="main">
-    <h1 class="visually-hidden">
-      Pink - Сайт фотоприложения для раскрашивания серых будней
-    </h1>
+    <h1 class="visually-hidden">Pink - Сайт фотоприложения для раскрашивания серых будней</h1>
     <section class="banner">
+      <h2 class="visually-hidden">Реклама приложения</h2>
       <div class="container banner__container">
-        <h2 class="big-title banner__title">
+        <h3 class="big-title banner__title">
           Взгляните на&nbsp;жизнь
           иначе!
-        </h2>
+        </h3>
       </div>
 
       <div class="banner__bottom">
@@ -89,38 +88,39 @@
     </section>
 
     <section class="benefits">
+      <h2 class="visually-hidden">Преимущества приложения</h2>
       <header class="benefits__header">
-        <h2 class="big-title benefits__title">
+        <h3 class="big-title benefits__title">
           Устали от серости мегаполиса?
-        </h2>
-        <h2 class="big-title benefits__title">
+        </h3>
+        <h3 class="big-title benefits__title">
           Нам есть, что вам предложить!
-        </h2>
+        </h3>
       </header>
 
       <ul class="benefits__list">
         <li class="benefits__advantage">
-          <h3 class="benefits__advantage-title">
+          <h4 class="benefits__advantage-title">
             Поднимает настроение
-          </h3>
+          </h4>
           <p class="text benefits__advantage-text">
             Приложение позволит вам победить осеннюю хандру и&nbsp;депрессию буквально в&nbsp;несколько кликов!
           </p>
         </li>
 
         <li class="benefits__advantage">
-          <h3 class="benefits__advantage-title">
+          <h4 class="benefits__advantage-title">
             Меняет мир вокруг
-          </h3>
+          </h4>
           <p class="text benefits__advantage-text">
             Сделайте снимок и&nbsp;украсьте его смайликом или текстовой подписью, чтобы усилить эффект
           </p>
         </li>
 
         <li class="benefits__advantage">
-          <h3 class="benefits__advantage-title">
+          <h4 class="benefits__advantage-title">
             Заводит новых друзей
-          </h3>
+          </h4>
           <p class="text benefits__advantage-text">
             Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
           </p>
@@ -129,6 +129,7 @@
     </section>
 
     <section class="reviews">
+      <h2 class="visually-hidden">Отзывы о приложение</h2>
       <div class="container">
         <ul class="reviews__list">
           <li class="reviews__card">
@@ -168,17 +169,14 @@
         <ul class="switches-list">
           <li class="switches-list__item">
             <button class="switches-list__button" type="button">
-              <span class="visually-hidden">Отзыв</span>
             </button>
           </li>
           <li class="switches-list__item">
             <button class="switches-list__button" type="button">
-              <span class="visually-hidden">Отзыв</span>
             </button>
           </li>
           <li class="switches-list__item">
             <button class="switches-list__button" type="button">
-              <span class="visually-hidden">Отзыв</span>
             </button>
           </li>
         </ul>
@@ -186,45 +184,104 @@
     </section>
 
     <section class="prices">
+      <h2 class="visually-hidden">Цены на тарифы</h2>
       <div class="container prices__container">
-        <table class="table-prices prices__table">
-          <thead class="table-prices__head">
-            <tr class="table-prices__headline">
-              <th class="table-prices__tariff" style="display: none;"></th>
-              <th class="table-prices__tariff">
-                <span class="table-prices__tariff-title">База</span>
-                <span class="table-prices__tariff-price">1,99 USD</span>
+        <table class="table prices__table">
+          <thead class="table-head">
+            <tr class="table-head__row">
+              <th class="table-head__tariff" style="display: none;"></th>
+              <th class="table-head__tariff">
+                <span class="table-head__tariff-title">База</span>
+                <span class="table-head__tariff-price">1,99 USD</span>
               </th>
-              <th class="table-prices__tariff">
-                <span class="table-prices__tariff-title">Стандарт</span>
-                <span class="table-prices__tariff-price">3,99 USD</span>
+              <th class="table-head__tariff table-head__tariff--hit" data-hit-text="Хит">
+                <span class="table-head__tariff-title">Стандарт</span>
+                <span class="table-head__tariff-price">3,99 USD</span>
               </th>
-              <th class="table-prices__tariff">
-                <span class="table-prices__tariff-title">Анлим</span>
-                <span class="table-prices__tariff-price">9,99 USD</span>
+              <th class="table-head__tariff">
+                <span class="table-head__tariff-title">Анлим</span>
+                <span class="table-head__tariff-price">9,99 USD</span>
               </th>
             </tr>
           </thead>
-          <tbody class="table-prices__body">
-            <tr class="table-prices__row">
-              <td class="table-prices__filter-title">Розовый фильтр</td>
-              <td class="table-prices__cell">
-                <div class="table-prices__feature table-prices__feature--pink" data-feature-name="Розовый фильтр">
-                  <span class="table-prices__availability table-prices__availability--yes">
+          <tbody class="table-body">
+            <tr class="table-body__row">
+              <td class="table-body__filter-title">Розовый фильтр</td>
+              <td class="table-body__cell">
+                <div class="table-body__feature table-body__feature--pink" data-feature-name="Розовый фильтр">
+                  <span class="table-body__availability table-body__availability--yes">
                     <span class="visually-hidden">Да</span>
                   </span>
                 </div>
               </td>
-              <td class="table-prices__cell">
-                <div class="table-prices__feature table-prices__feature--pink" data-feature-name="Розовый фильтр">
-                  <span class="table-prices__availability table-prices__availability--yes">
+
+              <td class="table-body__cell">
+                <div class="table-body__feature table-body__feature--pink" data-feature-name="Розовый фильтр">
+                  <span class="table-body__availability table-body__availability--yes">
                     <span class="visually-hidden">Да</span>
                   </span>
                 </div>
               </td>
-              <td class="table-prices__cell">
-                <div class="table-prices__feature table-prices__feature--pink" data-feature-name="Розовый фильтр">
-                  <span class="table-prices__availability table-prices__availability--yes">
+
+              <td class="table-body__cell">
+                <div class="table-body__feature table-body__feature--pink" data-feature-name="Розовый фильтр">
+                  <span class="table-body__availability table-body__availability--yes">
+                    <span class="visually-hidden">Да</span>
+                  </span>
+                </div>
+              </td>
+            </tr>
+
+            <tr class="table-body__row">
+              <td class="table-body__filter-title">Смайлики</td>
+
+              <td class="table-body__cell">
+                <div class="table-body__feature table-body__feature--emoticons" data-feature-name="Смайлики">
+                  <span class="table-body__availability table-body__availability--no">
+                    <span class="visually-hidden">Нет</span>
+                  </span>
+                </div>
+              </td>
+
+              <td class="table-body__cell">
+                <div class="table-body__feature table-body__feature--emoticons" data-feature-name="Смайлики">
+                  <span class="table-body__availability table-body__availability--yes">
+                    <span class="visually-hidden">Да</span>
+                  </span>
+                </div>
+              </td>
+
+              <td class="table-body__cell">
+                <div class="table-body__feature table-body__feature--emoticons" data-feature-name="Смайлики">
+                  <span class="table-body__availability table-body__availability--yes">
+                    <span class="visually-hidden">Да</span>
+                  </span>
+                </div>
+              </td>
+            </tr>
+
+            <tr class="table-body__row">
+              <td class="table-body__filter-title">Смайлики</td>
+
+              <td class="table-body__cell">
+                <div class="table-body__feature table-body__feature--comments" data-feature-name="Комментарии">
+                  <span class="table-body__availability table-body__availability--no">
+                    <span class="visually-hidden">Нет</span>
+                  </span>
+                </div>
+              </td>
+
+              <td class="table-body__cell">
+                <div class="table-body__feature table-body__feature--comments" data-feature-name="Комментарии">
+                  <span class="table-body__availability table-body__availability--no">
+                    <span class="visually-hidden">Нет</span>
+                  </span>
+                </div>
+              </td>
+
+              <td class="table-body__cell">
+                <div class="table-body__feature table-body__feature--comments" data-feature-name="Комментарии">
+                  <span class="table-body__availability table-body__availability--yes">
                     <span class="visually-hidden">Да</span>
                   </span>
                 </div>
@@ -232,7 +289,55 @@
             </tr>
           </tbody>
         </table>
+
+        <ul class="switches-list">
+          <li class="switches-list__item">
+            <button class="switches-list__button" type="button">
+            </button>
+          </li>
+          <li class="switches-list__item">
+            <button class="switches-list__button" type="button">
+            </button>
+          </li>
+          <li class="switches-list__item">
+            <button class="switches-list__button" type="button">
+            </button>
+          </li>
+        </ul>
       </div>
+    </section>
+    <section class="contacts">
+      <div class="container">
+        <h2 class="big-title contacts__title">
+          Остались вопросы?
+          Свяжитесь с&nbsp;нами!
+        </h2>
+
+        <ul class="contacts-list">
+          <li class="contacts-list__item">
+            <h3 class="contacts-list__title">
+              Звоните:
+            </h3>
+            <a class="contacts-list__link" href="tel:+78125556666">+7 (812) 555-66-66</a>
+          </li>
+          <li class="contacts-list__item">
+            <h3 class="contacts-list__title">
+              Пишите:
+            </h3>
+            <a class="contacts-list__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          </li>
+          <li class="contacts-list__item">
+            <h3 class="contacts-list__title">
+              Приезжайте в гости:
+            </h3>
+            <a class="contacts-list__link" href="https://yandex.ru/maps/-/CCUNJDgPcC">ул. Большая Конюшенная, 19/8</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- <div class="map">
+        should continue here
+      </div> -->
     </section>
   </main>
 </body>
