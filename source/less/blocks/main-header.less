@@ -1,0 +1,39 @@
+.main-header {
+  background-color: fade(@black, 75%);
+  padding: 21px 0;
+  width: 100%;
+
+  .tablet ({
+    padding: 27px 0 43px 0;
+  })
+}
+
+.main-header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .tablet ({
+    align-items: baseline;
+  });
+}
+
+.main-header__logo {
+  &--tablet {
+    display: none;
+  }
+
+  &--desktop {
+    display: none;
+  }
+
+  .tablet ({
+    &--mobile {
+      display: none;
+    }
+
+    &--tablet {
+      display: block;
+    }
+  });
+}

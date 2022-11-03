@@ -1,0 +1,179 @@
+.banner {
+  .tablet ({
+    position: relative;
+    background: url("../img/background-banner-tablet.jpg") no-repeat;
+    min-height: 729px;
+    padding: 210px 20px 30px 20px;
+    box-sizing: border-box;
+    background-size: cover;
+    background-position: 100% center;
+
+    &::before {
+      content: "";
+      background: url("../img/phone-image-banner-tablet.png") no-repeat;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      display: block;
+      width: 660px;
+      height: 545px;
+      background-size: 660px auto;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  });
+}
+
+.banner__title {
+  color: @white;
+
+  .tablet ({
+    line-height: 45px;
+    width: calc(100% - 51.6%);
+    margin-bottom: 39px
+  });
+}
+
+.banner__top {
+  background: url("../img/background-banner-mobile.jpg") no-repeat;
+  min-height: 462px;
+  box-sizing: border-box;
+  padding-top: 95px;
+  background-size: cover;
+  background-position: 100% center;
+  position: relative;
+
+  @supports (background: url("../img/background-banner-mobile.webp")) {
+    background: url("../img/background-banner-mobile.webp") no-repeat;
+    background-size: cover;
+  }
+
+  .retina ({
+    background: url("../img/background-banner-mobile@2x.jpg") no-repeat;
+    background-size: cover;
+
+    @supports (background: url("../img/background-banner-mobile@2x.webp")) {
+      background: url("../img/background-banner-mobile@2x.webp") no-repeat;
+      background-size: cover;
+    }
+  });
+
+  .tablet ({
+    background: none;
+    min-height: auto;
+    padding: 0;
+  });
+
+  &::before {
+    content: " ";
+    background: url("../img/phone-image-banner-mobile.png") no-repeat;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: block;
+    width: 320px;
+    height: 286px;
+    background-size: 320px auto;
+    left: 50%;
+    transform: translateX(-50%);
+
+    @supports (background: url("../img/phone-image-banner-mobile.webp")) {
+      background: url("../img/phone-image-banner.webp") no-repeat;
+      background-size: 320px auto;
+    }
+
+    .retina ({
+      background: url("../img/phone-image-banner-mobile@2x.png") no-repeat;
+      width: 320px;
+      height: 286px;
+      background-size: 320px auto;
+
+      @supports (background: url("../img/phone-image-banner-mobile@2x.webp")) {
+        background: url("../img/phone-image-banner-mobile@2x.webp") no-repeat;
+        background-size: 320px auto;
+      }
+    });
+
+    .tablet ({
+      display: none;
+    });
+  }
+}
+
+.banner__bottom {
+  background-color: @black;
+  padding-top: 28px;
+  padding-bottom: 38px;
+
+  .tablet ({
+    padding: 0;
+    background: none;
+    width: calc(100% - 51.6%);
+    position: relative;
+    z-index: 20;
+  });
+}
+
+.banner__button {
+  color: @white;
+  text-decoration: none;
+  margin-bottom: 32px;
+
+  .tablet ({
+    margin-bottom: 46px;
+  });
+}
+
+.banner__text {
+  margin: 0;
+  color: @white;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+
+  .tablet ({
+    font-size: 17px;
+  });
+}
+
+.banner__list {
+  .list-none();
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 28px;
+
+  .tablet ({
+    margin-bottom: 38px;
+  });
+}
+
+.banner__item {
+  display: block;
+  &--apple {
+    &::before {
+      content: url("../img/icons/apple.svg");
+      display: block;
+      width: 47px;
+      height: 56px;
+    }
+  }
+
+  &--android {
+    &::before {
+      content: url("../img/icons/android.svg");
+      display: block;
+      width: 43px;
+      height: 47px;
+    }
+  }
+
+  &--microsoft {
+    &::before {
+      content: url("../img/icons/microsoft.svg");
+      display: block;
+      width: 44px;
+      height: 41px;
+    }
+  }
+}

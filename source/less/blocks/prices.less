@@ -1,0 +1,30 @@
+.prices {
+  background-color: @gray;
+  padding: 83px 0 49px 0;
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: " ";
+    height: 20px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-clip-path: polygon(0 100%,0 0,100% 0);
+    clip-path: polygon(0 100%,0 0,100% 0);
+    background-color: rgb(255 255 255);
+  }
+}
+
+.prices__container {
+  padding: 0;
+}
+
+.prices__table {
+  width: 832px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 37px;
+}
