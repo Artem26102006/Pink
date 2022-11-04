@@ -3,40 +3,63 @@
 }
 
 .benefits__title {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 
   &:last-child {
     margin-bottom: 0;
   }
+
+  .tablet ({
+    line-height: 58px;
+    margin-bottom: 0;
+  });
 }
 
 .benefits__header {
   margin-bottom: 41px;
+
+  .tablet ({
+    margin-bottom: 37px;
+  });
 }
 
-.benefits__list {
-  .list-none();
+.benefits__wrapper {
   position: relative;
-  overflow: hidden;
-  padding: 85px 20px 325px 20px;
   background-color: @gray;
+  padding-top: 75px;
+  padding-bottom: 325px;
+  overflow: hidden;
 
+  .tablet ({
+    min-height: 504px;
+    padding-bottom: 40px;
+    padding-top: 85px;
+    box-sizing: border-box;
+  });
 
   &::before {
     content: " ";
-    height: 33px;
+    height: 31px;
     width: 100%;
     position: absolute;
     top: 0;
     left: 0;
     -webkit-clip-path: polygon(0 100%,0 0,100% 0);
     clip-path: polygon(0 100%,0 0,100% 0);
-    background-color: rgb(255 255 255);
-  }
+    background-color: @white;
 
-  &::after {
+    .tablet ({
+      height: 60px;
+    });
+  }
+}
+
+.benefits__list {
+  .list-none();
+
+  &::before {
     content: "";
-    background: url("../img/phone-image-example.png") no-repeat;
+    background: url("../img/phone-image-example-mobile.png") no-repeat;
     width: 157px;
     height: 320px;
     background-size: 157px 320px;
@@ -46,21 +69,52 @@
     transform: translateX(-50%);
     bottom: -37px;
 
-    @supports (background: url("../img/phone-image-example.webp")) {
-      background: url("../img/phone-image-example.webp") no-repeat;
+    @supports (background: url("../img/phone-image-example-mobile.webp")) {
+      background: url("../img/phone-image-example-mobile.webp") no-repeat;
       background-size: 157px 320px;
     }
 
     .retina ({
-      background: url("../img/phone-image-example@2x.png") no-repeat;
+      background: url("../img/phone-image-example-mobile@2x.png") no-repeat;
       background-size: 157px 320px;
 
-      @supports (background: url("../img/phone-image-example@2x.webp")) {
-        background: url("../img/phone-image-example@2x.webp") no-repeat;
+      @supports (background: url("../img/phone-image-example-mobile@2x.webp")) {
+        background: url("../img/phone-image-example-mobile@2x.webp") no-repeat;
         background-size: 157px 320px;
       };
     });
+
+    .tablet ({
+      background: url("../img/phone-image-example-tablet.png") no-repeat;
+      width: 268px;
+      height: 547px;
+      background-size: 268px 546px;
+      left: 20px;
+      transform: translateX(0);
+      bottom: 0;
+      top: 20px;
+
+      @supports (background: url("../img/phone-image-example-tablet.webp")) {
+        background: url("../img/phone-image-example-tablet.webp") no-repeat;
+        background-size: 268px 547px;
+      }
+
+      .retina ({
+        background: url("../img/phone-image-example-tablet@2x.png") no-repeat;
+        background-size: 268px 547px;
+
+        @supports (background: url("../img/phone-image-example-tablet@2x.webp")) {
+          background: url("../img/phone-image-example-tablet@2x.webp") no-repeat;
+          background-size: 268px 547px;
+        };
+      });
+    });
   }
+
+  .tablet ({
+    width: calc(100% - 300px);
+    margin-left: auto;
+  });
 }
 
 .benefits__advantage {
@@ -70,6 +124,11 @@
   &:last-child {
     margin-bottom: 0;
   }
+
+  .tablet ({
+    text-align: start;
+    margin-bottom: 35px;
+  });
 }
 
 .benefits__advantage-title {
