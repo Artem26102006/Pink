@@ -1,0 +1,50 @@
+.user {
+  .tablet ({
+    display: flex;
+    flex-direction: column
+  });
+}
+
+.user__name {
+  font-family: "Open Sans Bold";
+  margin: 0;
+  margin-bottom: 15px;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+
+  .tablet ({
+    font-size: 20px;
+    margin-bottom: 0;
+  });
+}
+
+.user__info {
+  &--none {
+    @media (max-width: 659px) {
+      display: none;
+    }
+  }
+
+  .tablet ({
+    margin: 0;
+    text-align: center;
+    font-size: 14px;
+    line-height: 30px;
+    margin-bottom: 30px;
+  });
+}
+
+.user__review {
+  margin: 0;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+
+  .tablet ({
+    order: -1;
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 35px;
+  });
+}

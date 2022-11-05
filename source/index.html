@@ -19,6 +19,9 @@
         <svg width="145" height="40" class="main-header__logo main-header__logo--tablet">
           <use href="img/sprite.svg#logo-tablet"></use>
         </svg>
+        <svg width="147" height="40" class="main-header__logo main-header__logo--desktop">
+          <use href="img/sprite.svg#logo-desktop"></use>
+        </svg>
       </a>
 
       <nav class="navigation">
@@ -50,39 +53,42 @@
     <h1 class="visually-hidden">
       Pink - Сайт фотоприложения для раскрашивания серых будней
     </h1>
+
     <section class="banner">
       <h2 class="visually-hidden">Реклама приложения</h2>
-      <div class="container banner__top">
-        <h3 class="big-title banner__title">
-          Взгляните на&nbsp;жизнь иначе!
-        </h3>
-      </div>
+      <div class="container banner__container">
+        <div class="banner__header">
+          <h3 class="big-title banner__title">
+            Взгляните на&nbsp;жизнь иначе!
+          </h3>
+        </div>
 
-      <div class="container banner__bottom">
-        <a href="#" class="button banner__button"> Скачать приложение </a>
+        <div class="banner__info">
+          <a href="#" class="button banner__button"> Скачать приложение </a>
 
-        <ul class="banner__list">
-          <li class="banner__item banner__item--apple">
-            <span class="visually-hidden"> Операционная система Apple </span>
-          </li>
+          <ul class="banner__list">
+            <li class="banner__item banner__item--apple">
+              <span class="visually-hidden"> Операционная система Apple </span>
+            </li>
 
-          <li class="banner__item banner__item--android">
-            <span class="visually-hidden">
-              Операционная система Android
-            </span>
-          </li>
+            <li class="banner__item banner__item--android">
+              <span class="visually-hidden">
+                Операционная система Android
+              </span>
+            </li>
 
-          <li class="banner__item banner__item--microsoft">
-            <span class="visually-hidden">
-              Операционная система Microsoft
-            </span>
-          </li>
-        </ul>
+            <li class="banner__item banner__item--microsoft">
+              <span class="visually-hidden">
+                Операционная система Microsoft
+              </span>
+            </li>
+          </ul>
 
-        <p class="banner__text">
-          Доступно для iPhone, iPad, Android, Windows Phone, OS&nbsp;X,
-          Windows&nbsp;8
-        </p>
+          <p class="banner__text">
+            Доступно для iPhone, iPad, Android, Windows Phone, OS&nbsp;X,
+            Windows&nbsp;8
+          </p>
+        </div>
       </div>
     </section>
 
@@ -94,76 +100,81 @@
             Устали от серости мегаполиса?
           </h3>
           <h3 class="big-title benefits__title">
-            Нам есть, что вам предложить!
+            Нам есть, что вам<br> предложить!
           </h3>
         </div>
       </header>
 
-      <ul class="benefits__list">
-        <li class="benefits__advantage">
-          <h4 class="benefits__advantage-title">Поднимает настроение</h4>
-          <p class="benefits__advantage-text">
-            Приложение позволит вам победить осеннюю хандру и&nbsp;депрессию
-            буквально в&nbsp;несколько кликов!
-          </p>
-        </li>
+      <div class="container benefits__wrapper">
+        <ul class="benefits__list">
+          <li class="benefits__advantage">
+            <h4 class="benefits__advantage-title">Поднимает настроение</h4>
+            <p class="benefits__advantage-text">
+              Приложение позволит вам победить осеннюю хандру и&nbsp;депрессию
+              буквально в&nbsp;несколько кликов!
+            </p>
+          </li>
 
-        <li class="benefits__advantage">
-          <h4 class="benefits__advantage-title">Меняет мир вокруг</h4>
-          <p class="benefits__advantage-text">
-            Сделайте снимок и&nbsp;украсьте его смайликом или текстовой
-            подписью, чтобы усилить эффект
-          </p>
-        </li>
+          <li class="benefits__advantage">
+            <h4 class="benefits__advantage-title">Меняет мир вокруг</h4>
+            <p class="benefits__advantage-text">
+              Сделайте снимок и&nbsp;украсьте его смайликом или текстовой
+              подписью, чтобы усилить эффект
+            </p>
+          </li>
 
-        <li class="benefits__advantage">
-          <h4 class="benefits__advantage-title">Заводит новых друзей</h4>
-          <p class="benefits__advantage-text">
-            Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и
-            заводите новых
-          </p>
-        </li>
-      </ul>
+          <li class="benefits__advantage">
+            <h4 class="benefits__advantage-title">Заводит новых друзей</h4>
+            <p class="benefits__advantage-text">
+              Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и
+              заводите новых
+            </p>
+          </li>
+        </ul>
+      </div>
     </section>
+
+    <aside class="effect effect--none">
+      <div class="container effect__container">
+        <h2 class="effect__title">
+          Эффект на&nbsp;24&nbsp;часа!
+        </h2>
+        <p class="effect__text">
+          Британские ученые провели исследования
+          и&nbsp;доказали, что положительный эффект
+          от&nbsp;использования приложения длится целые сутки!
+        </p>
+        <a href="#" class="effect__link">
+          Узнать больше об исследовании
+        </a>
+      </div>
+    </aside>
 
     <section class="reviews">
       <h2 class="visually-hidden">Отзывы о приложение</h2>
       <div class="container">
         <ul class="reviews__list">
-          <li class="reviews__card">
-            <h3 class="reviews__user">Николай Петров</h3>
-            <p class="reviews__text">
-              «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я
-              познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+          <li class="user">
+            <h3 class="user__name">Николай Петров</h3>
+            <p class="user__info user__info--none">
+              25&nbsp;лет, водитель трамвая
             </p>
-          </li>
-
-          <li class="reviews__card visually-hidden">
-            <h3 class="reviews__user">Николай Петров</h3>
-            <p class="reviews__text">
-              «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я
-              познакомился со своей будущей женой в комментариях к выложенной фотографии!»
-            </p>
-          </li>
-
-          <li class="reviews__card visually-hidden">
-            <h3 class="reviews__user">Николай Петров</h3>
-            <p class="reviews__text">
+            <p class="user__review">
               «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я
               познакомился со своей будущей женой в комментариях к выложенной фотографии!»
             </p>
           </li>
         </ul>
 
-        <ul class="switches-list">
-          <li class="switches-list__item">
-            <button class="switches-list__button" type="button"></button>
+        <ul class="switches">
+          <li class="switches__item">
+            <button class="switches__button" type="button"></button>
           </li>
-          <li class="switches-list__item">
-            <button class="switches-list__button" type="button"></button>
+          <li class="switches__item">
+            <button class="switches__button" type="button"></button>
           </li>
-          <li class="switches-list__item">
-            <button class="switches-list__button" type="button"></button>
+          <li class="switches__item">
+            <button class="switches__button" type="button"></button>
           </li>
         </ul>
       </div>
@@ -175,24 +186,24 @@
         <table class="table prices__table">
           <thead class="table-head">
             <tr class="table-head__row">
-              <th class="table-head__tariff" style="display: none"></th>
-              <th class="table-head__tariff">
-                <span class="table-head__tariff-title">База</span>
-                <span class="table-head__tariff-price">1,99 USD</span>
+              <th class="table-head__cell-hidden"></th>
+              <th class="table-head__cell">
+                <span class="table-head__title">База</span>
+                <span class="table-head__price">1,99 USD</span>
               </th>
-              <th class="table-head__tariff table-head__tariff--hit" data-hit-text="Хит">
-                <span class="table-head__tariff-title">Стандарт</span>
-                <span class="table-head__tariff-price">3,99 USD</span>
+              <th class="table-head__cell table-head__cell--hit" data-hit-text="Хит">
+                <span class="table-head__title">Стандарт</span>
+                <span class="table-head__price">3,99 USD</span>
               </th>
-              <th class="table-head__tariff">
-                <span class="table-head__tariff-title">Анлим</span>
-                <span class="table-head__tariff-price">9,99 USD</span>
+              <th class="table-head__cell">
+                <span class="table-head__title">Анлим</span>
+                <span class="table-head__price">9,99 USD</span>
               </th>
             </tr>
           </thead>
           <tbody class="table-body">
             <tr class="table-body__row">
-              <td class="table-body__filter-title">Розовый фильтр</td>
+              <td class="table-body__title">Розовый фильтр</td>
               <td class="table-body__cell">
                 <div class="table-body__feature table-body__feature--pink" data-feature-name="Розовый фильтр">
                   <span class="table-body__availability table-body__availability--yes">
@@ -219,7 +230,7 @@
             </tr>
 
             <tr class="table-body__row">
-              <td class="table-body__filter-title">Смайлики</td>
+              <td class="table-body__title">Смайлики</td>
 
               <td class="table-body__cell">
                 <div class="table-body__feature table-body__feature--emoticons" data-feature-name="Смайлики">
@@ -247,7 +258,7 @@
             </tr>
 
             <tr class="table-body__row">
-              <td class="table-body__filter-title">Смайлики</td>
+              <td class="table-body__title">Комментарии</td>
 
               <td class="table-body__cell">
                 <div class="table-body__feature table-body__feature--comments" data-feature-name="Комментарии">
@@ -276,15 +287,15 @@
           </tbody>
         </table>
 
-        <ul class="switches-list">
-          <li class="switches-list__item">
-            <button class="switches-list__button" type="button"></button>
+        <ul class="switches switches--none">
+          <li class="switches__item">
+            <button class="switches__button" type="button"></button>
           </li>
-          <li class="switches-list__item">
-            <button class="switches-list__button" type="button"></button>
+          <li class="switches__item">
+            <button class="switches__button" type="button"></button>
           </li>
-          <li class="switches-list__item">
-            <button class="switches-list__button" type="button"></button>
+          <li class="switches__item">
+            <button class="switches__button" type="button"></button>
           </li>
         </ul>
       </div>
@@ -292,7 +303,7 @@
     <section class="contacts">
       <div class="container">
         <h2 class="big-title contacts__title">
-          Остались вопросы? Свяжитесь с&nbsp;нами!
+          Остались вопросы?<br> Свяжитесь с&nbsp;нами!
         </h2>
 
         <ul class="contacts-list">
@@ -313,7 +324,10 @@
 
       <div class="map contacts__map">
         <picture>
-          <source type="image/webp" srcset="img/map-mobile.webp, img/map-mobile@2x.webp 2x" />
+          <source media="(min-width: 660px)" type="image/webp"
+            srcset="img/map-tablet.webp 1x, img/map-tablet@2x.webp 2x" />
+          <source type="image/webp" srcset="img/map-mobile.webp 1x, img/map-mobile@2x.webp 2x" />
+          <source media="(min-width: 660px)" srcset="img/map-tablet.jpg 1x, img/map-tablet@2x.jpg 2x">
           <img class="map__image" src="img/map-mobile.jpg" srcset="img/map-mobile@2x.jpg 2x"
             alt="Карта, где мы находимся" />
         </picture>

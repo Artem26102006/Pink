@@ -1,10 +1,30 @@
 .table-body__cell {
   padding: 19px 17px 19px 20px;
   background-color: @white;
+
+  .tablet ({
+    padding: 0;
+    min-width: 152px;
+    box-sizing: border-box;
+  });
 }
 
-.table-body__filter-title {
+.table-body__title {
   display: none;
+
+  .tablet ({
+    display: block;
+    box-sizing: border-box;
+    font-size: 14px;
+    line-height: 30px;
+    min-width: 152px;
+    padding: 8px 0 7px 15px;
+    background-color: @white;
+  });
+
+  .desktop ({
+    padding: 15px 0 14px 22px;
+  });
 }
 
 .table-body__feature {
@@ -12,21 +32,37 @@
   justify-content: space-between;
   align-items: center;
 
+  .tablet ({
+    justify-content: center;
+  });
+
   &--pink {
     &::before {
       content: attr(data-feature-name);
+
+      .tablet ({
+        display: none
+      });
     }
   }
 
   &--emoticons {
     &::before {
       content: attr(data-feature-name);
+
+      .tablet ({
+        display: none
+      });
     }
   }
 
   &--comments {
     &::before {
       content: attr(data-feature-name);
+
+      .tablet ({
+        display: none
+      });
     }
   }
 }

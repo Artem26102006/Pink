@@ -1,10 +1,22 @@
 .navigation__list {
   .list-none();
   display: none;
+
+  .desktop ({
+    width: 620px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+  });
 }
 
 .navigation__item {
   width: 100%;
+
+  .desktop ({
+    width: auto;
+  })
 }
 
 .navigation__link {
@@ -13,4 +25,12 @@
   text-decoration: none;
   text-transform: uppercase;
   font-weight: bold;
+
+  .desktop ({
+    font-family: "Open Sans Light";
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 400;
+    text-transform: none;
+  });
 }
