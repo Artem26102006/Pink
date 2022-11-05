@@ -1,0 +1,58 @@
+.effect {
+  padding-top: 55px;
+
+  @media (max-width: 659px) {
+    &--none {
+      display: none;
+    }
+  }
+}
+
+.effect__container {
+  position: relative;
+  display: grid;
+  grid-template-columns: 268px 1fr;
+  grid-template-rows: auto minmax(80px, auto) auto;
+  grid-template-areas:
+    "img title"
+    "img text"
+    "img link";
+  column-gap: 41px;
+  row-gap: 11px;
+
+  &::before {
+    content: url("../img/icons/effect-time.svg");
+    display: block;
+    position: relative;
+    width: 238px;
+    height: 276px;
+    grid-area: img;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+.effect__title {
+  grid-area: title;
+  font-family: "Open Sans Bold";
+  margin: 0;
+  width: calc(100% - 139px);
+  font-size: 30px;
+  line-height: 36px;
+  align-self: end;
+}
+
+.effect__text {
+  grid-area: text;
+  margin: 0;
+  font-size: 14px;
+  line-height: 24px;
+  color: @black-light;
+}
+
+.effect__link {
+  color: @red;
+  font-size: 14px;
+  line-height: 24px;
+  grid-area: link;
+}
