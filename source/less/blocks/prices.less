@@ -4,6 +4,10 @@
   position: relative;
   overflow: hidden;
 
+  .tablet ({
+    padding: 114px 0 70px 0;
+  });
+
   &::before {
     content: " ";
     height: 20px;
@@ -14,6 +18,10 @@
     -webkit-clip-path: polygon(0 100%,0 0,100% 0);
     clip-path: polygon(0 100%,0 0,100% 0);
     background-color: rgb(255 255 255);
+
+    .tablet ({
+      height: 40px;
+    });
   }
 }
 
@@ -24,7 +32,17 @@
 .prices__table {
   width: 832px;
   position: relative;
+  box-sizing: border-box;
   left: 50%;
   transform: translateX(-50%);
   margin-bottom: 37px;
+
+  .tablet ({
+    width: calc(100% - 40px);
+    margin: 0;
+  });
+
+  .desktop ({
+    width: 100%;
+  });
 }

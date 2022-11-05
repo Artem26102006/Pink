@@ -3,7 +3,6 @@
     position: relative;
     background: url("../img/background-banner-tablet.jpg") no-repeat;
     min-height: 729px;
-    padding: 0 calc(50% - 310px);
     padding-top: 210px;
     padding-bottom: 40px;
     box-sizing: border-box;
@@ -52,8 +51,55 @@
           background-size: cover;
         }
       });
+
+      .desktop ({
+        display: none;
+      });
     }
-  });;
+  });
+
+  .desktop ({
+    background: url("../img/background-banner-desktop.jpg") no-repeat;
+    background-size: cover;
+    background-position: 100% center;
+    min-height: 853px;
+    padding: 0;
+    padding-top: 224px;
+
+    @supports (background: url("../img/background-banner-desktop.webp")) {
+      background: url("../img/background-banner-desktop.webp") no-repeat;
+      background-size: cover;
+    }
+
+    .retina ({
+      background: url("../img/background-banner-desktop@2x.jpg") no-repeat;
+      background-size: cover;
+
+      @supports (background: url("../img/background-banner-desktop@2x.webp")) {
+        background: url("../img/background-banner-desktop@2x.webp") no-repeat;
+        background-size: cover;
+      }
+    });
+  });
+}
+
+.banner__container {
+  padding: 0;
+  position: relative;
+
+  .tablet ({
+    padding: 0 20px;
+  });
+
+  .desktop ({
+    background: url("../img/phone-image-banner-desktop.png") no-repeat;
+    width: 1050px;
+    height: 645px;
+    background-size: 1050px auto;
+    transform: translateX(0);
+    left: 0;
+    background-position-x: 29px;
+  });
 }
 
 .banner__title {
@@ -62,9 +108,15 @@
 
   .tablet ({
     line-height: 45px;
-    width: calc(100% - 51.6%);
+    width: 48.4%;
     margin-bottom: 39px
-  });;
+  });
+
+  .desktop ({
+    width: 300px;
+    font-size: 50px;
+    line-height: 60px;
+  });
 }
 
 .banner__header {
@@ -140,23 +192,38 @@
   .tablet ({
     padding: 0;
     background: none;
-    width: calc(100% - 51.6%);
+    width: 48.4%;
     position: relative;
     z-index: 20;
-  });;
+  });
+
+  .desktop ({
+    width: 300px;
+  });
 }
 
 .banner__button {
+  font-family: "Open Sans Light";
   color: @white;
   text-decoration: none;
   margin-bottom: 32px;
 
   .tablet ({
     margin-bottom: 46px;
-  });;
+  });
+
+  .desktop ({
+    margin: 0;
+    margin-bottom: 67px;
+    box-sizing: border-box;
+    padding: 16px 32px;
+    font-size: 21px;
+    line-height: 18px;
+  });
 }
 
 .banner__text {
+  font-family: "Open Sans Light";
   margin: 0;
   color: @white;
   font-size: 14px;
@@ -165,7 +232,12 @@
 
   .tablet ({
     font-size: 17px;
-  });;
+  });
+
+  .desktop ({
+    font-size: 18px;
+    line-height: 24px;
+  });
 }
 
 .banner__list {
